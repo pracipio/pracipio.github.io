@@ -1,0 +1,357 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+/*
+        Pronation v1.0.0
+        Author Soukri Kechagia
+        Copyright 2012 Skechagia
+        Designed and built with all the love.
+
+
+        Table of Contents
+
+        1. LANDSCAPE PHONE TO DOWN - @media (max-width: 480px) { }
+        2. LANDSCAPE PHONE TO PORTRAIT TABLET - @media (max-width: 767px) { }
+        3. LANDSCAPE PHONE TO LANDSCAPE TABLET - @media (max-width: 979px) { }
+        4. PORTRAIT TABLET TO LANDSCAPE AND DESKTOP - @media (min-width: 768px) and (max-width: 979px) { }
+        5. DESKTOP SCREENS - @media (min-width: 980px) { }
+        6. LARGE DESKTOP & UP - @media (min-width: 1200px) { }
+
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*http://www.justbenicestudio.com/studio/websymbols/*/
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url('../fonts/websymbols-regular-webfont.eot');
+  src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/websymbols-regular-webfont.woff') format('woff'), url('../fonts/websymbols-regular-webfont.ttf') format('truetype'), url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/************************************************************************\
+
+                			 1. LANDSCAPE PHONE TO DOWN
+
+\************************************************************************/
+@media (max-width: 480px) {
+  /* Change up some type stuff */
+  h2 {
+    margin-top: 27px;
+  }
+  h2 small {
+    display: block;
+    line-height: 18px;
+  }
+  h3 {
+    margin-top: 18px;
+  }
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  /*slider*/
+  #myCarousel .carousel-caption {
+    display: none;
+  }
+  /*main-page*/
+  .news-slider .flex-direction-nav .flex-next {
+    display: none;
+  }
+  .news-slider .flex-direction-nav .flex-prev {
+    display: none;
+  }
+}
+/************************************************************************\
+
+                    2. LANDSCAPE PHONE TO PORTRAIT TABLET
+
+\************************************************************************/
+@media (max-width: 767px) {
+  /*primary-navigation*/
+  header.main {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  /*top-page*/
+  section.top {
+    text-align: center;
+    margin: 0 -20px 42px -20px;
+    padding: 42px 20px 0 20px;
+  }
+  section.top a.btn {
+    margin-top: 0px;
+    width: 100%;
+  }
+  /*slider*/
+  .slider {
+    margin: auto -20px;
+    padding: 0 20px 53px 20px;
+  }
+  /*main-page*/
+  .main-page {
+    margin: auto -20px;
+    padding: 53px 20px 0px 20px;
+  }
+  article.recent-work {
+    padding-bottom: 30px;
+  }
+  .recent-work .thumbnail {
+    margin: 0 0px 18px 0;
+  }
+  .about .thumbnail {
+    margin: 0 0px 18px 0;
+  }
+  .about .float-right {
+    float: none;
+  }
+  .news-slider .flex-direction-nav .flex-next {
+    right: 0%;
+  }
+  .news-slider .flex-direction-nav .flex-prev {
+    right: 7%;
+  }
+  .news-slider .flexslider:hover .flex-next {
+    opacity: 0.8;
+    right: 0%;
+  }
+  .news-slider .flexslider:hover .flex-prev {
+    opacity: 0.8;
+    right: 7%;
+  }
+  .main-page .info {
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .main-page .info ul {
+    *zoom: 1;
+  }
+  .main-page .info ul:before,
+  .main-page .info ul:after {
+    display: table;
+    content: "";
+  }
+  .main-page .info ul:after {
+    clear: both;
+  }
+  .main-page .info ul li {
+    margin-bottom: 6px;
+    float: left;
+    margin-right: 15px;
+  }
+  /*footer*/
+  .footer {
+    margin: auto -20px;
+    padding: 18px 20px;
+  }
+  .footer .footer-inner {
+    margin-bottom: 30px;
+  }
+  /*footer-bottom*/
+  .footer-bottom {
+    margin: auto -20px;
+  }
+}
+/************************************************************************\
+
+                3. LANDSCAPE PHONE TO LANDSCAPE TABLET
+
+\************************************************************************/
+@media (max-width: 979px) {
+  /*font-size*/
+  section.top p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  /*primary-navigation*/
+  header h1.logo a {
+    margin: auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav select {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 12px 0;
+    padding: 4px;
+    border: 1px solid #5bc0de;
+    height: 30px;
+    line-height: 30px;
+  }
+  nav select:focus,
+  nav select:active {
+    outline: none;
+  }
+  /*slider*/
+  .rs-caption.dark,
+  .rs-caption.light,
+  #myCarousel .carousel-caption.dark,
+  #myCarousel .carousel-caption.light {
+    margin: 0px;
+  }
+  .carousel-control {
+    left: 46%;
+  }
+  .carousel-control.right {
+    left: 54%;
+  }
+  /*fotter-bottom*/
+  .navbar .container {
+    width: 90%;
+    padding: 0;
+  }
+  .scroll-top {
+    right: 3%;
+  }
+  .scroll-top a {
+    font-size: 36px;
+  }
+}
+/************************************************************************\
+
+                4. PORTRAIT TABLET TO LANDSCAPE AND DESKTOP
+
+\************************************************************************/
+@media (min-width: 768px) and (max-width: 979px) {
+  .header-bg h3 {
+    padding: 0;
+    margin: 0 0 0 -4px;
+  }
+  .header-bg span {
+    width: 0;
+  }
+  /*primary-navigation*/
+  nav select {
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 42px;
+  }
+  /*main-page*/
+  .news-slider .flex-direction-nav .flex-next {
+    right: 0%;
+  }
+  .news-slider .flex-direction-nav .flex-prev {
+    right: 17%;
+  }
+  .news-slider .flexslider:hover .flex-next {
+    opacity: 0.8;
+    right: 0%;
+  }
+  .news-slider .flexslider:hover .flex-prev {
+    opacity: 0.8;
+    right: 17%;
+  }
+  .nav-tabs > li > a,
+  .nav-pills > li > a {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 2px;
+    line-height: 14px;
+  }
+  /*footer*/
+  .flex-control-nav li {
+    margin: 0 6px;
+  }
+  /*bottom-footer*/
+  .navbar-bottom .container {
+    width: 724px;
+  }
+}
+/************************************************************************\
+
+                    5. DESKTOP SCREENS
+
+\************************************************************************/
+@media (min-width: 980px) {
+  .btn-mega [class^="icon-"] {
+    display: inline-block !important;
+  }
+}
+/************************************************************************\
+
+                    6. LARGE DESKTOP & UP
+
+\************************************************************************/
+@media (min-width: 1200px) {
+  blockquote p {
+    font-size: 14px;
+  }
+  /*primary-navigation*/
+  nav ul.dropdown > li > a {
+    padding: 35px 36px 28px;
+    font-size: 15px;
+  }
+  ul.dropdown *.dir {
+    padding: 35px 36px 28px;
+  }
+  /*top-page*/
+  .top a.btn {
+    margin-top: 42px;
+  }
+  /*main-page*/
+  .news-slider .flex-direction-nav .flex-next {
+    right: 0%;
+  }
+  .news-slider .flex-direction-nav .flex-prev {
+    right: 10%;
+  }
+  .news-slider .flexslider:hover .flex-next {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    right: 0%;
+  }
+  .news-slider .flexslider:hover .flex-prev {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    right: 10%;
+  }
+  .nav-tabs > li > a,
+  .nav-pills > li > a {
+    text-transform: uppercase;
+  }
+  /*footer*/
+  footer.footer p,
+  footer.bottom p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  ul.social-icons li {
+    margin: 0 10px 6px 0;
+  }
+  /*bottom-footer*/
+  .navbar.navbar-bottom .nav > li > a {
+    padding: 18px 20px 18px;
+    font-size: 13px;
+  }
+}

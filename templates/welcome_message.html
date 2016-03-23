@@ -1,0 +1,171 @@
+{% extends "base_template.html" %}
+
+{% block more_head %}
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+
+<style>
+#newsCarousel .carousel-control {
+        top: -57px;
+        left: 300px;
+        right: 325px;
+}
+
+#newsCarousel .carousel-control.right {
+        left: 320px;
+        right:305px;
+}
+
+.contact a {
+  color:white;
+}
+
+</style>
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+<section class="top">
+                <div class="container">
+                        <div class="row">
+                                <div class="span4">
+                                        <header>
+                                                <h1>Welcome to <span>Pracipio</span></h1>
+                                        </header>
+
+                                </div><!-- /span9 -->
+                                <div class="span6">
+                                        <p>Anticipate, advise and advance - Pracipio helps you achieve your business objectives by applying a team of consultants who have formed a best in class management and strategy consultancy.</p>
+                                </div><!-- /span3 -->
+                        </div><!-- /row -->               
+                </div><!-- /container -->
+        </section><!-- /top -->
+  
+
+<section class="slider">
+    <div class="container">
+      <div id="myCarousel" class="carousel slide">
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+	  <div class="active item">
+	    <img src="/static/img/slider_img1.jpg" alt="" />
+	    <div class="carousel-caption light">
+	     <p>Better valuation of development and software investments can <a href="http://en.wikipedia.org/wiki/Tax_advantage">give you a tax-advantage</a> - Bespoke developments don't always deliver on budget and schedule. Revaluation in line with market and utility values can realize immediate and long terms value. Do you have big software investments or development projects?<a href="mailto:felg@pracipio.com"> Contact us now. </a></p>
+	      <button class="btn btn-info pull-right contact"><a href="contact">Call now</a> </button>
+	    </div>
+	  </div>
+	  <div class="item">
+	    <img src="/static/img/slider_img2.jpg" alt="" />
+	    <div class="carousel-caption dark">
+	      <p>Optimized data to support the story for your product can double your sales - Realize the benefit of best-in-class science and methods and build key opinion leader insights and endorsement. Our <a href="http://en.wikipedia.org/wiki/Health_economics">outcomes research</a> & <a href="http://en.wikipedia.org/wiki/Key_opinion_leader#Key_opinion_leader">opinion leader</a> development capabilities will help your products thrive in a value-driven market. Do you need to ensure favourable market access, pricing and product adoption for your product? <a href="mailto:felg@pracipio.com">Contact us now. </a></p>
+	      <button class="btn btn-info pull-right contact"><a href="contact">Call now</a> </button>
+	    </div>
+	  </div>
+	  <div class="item">
+	    <img src="/static/img/slider_img3.jpg" alt="" />
+	    <div class="carousel-caption dark">
+	       <p>Get your development strategy right and realize the value - Only multi-discipline expert teams, stakeholder engagement and <a href="http://en.wikipedia.org/wiki/System_dynamics">simulation</a> can maximize probability of commercial success. Work with Pracipio to develop your product development strategy and alternatives for positioning, differentiation, value proposition, go-to-market strategy and your launch programme.Do you need to ensure a value-maximizing strategy for your development assets?  <a href="mailto:felg@pracipio.com">Contact us now.</a></p>
+	      <button class="btn btn-info pull-right contact"><a href="contact">Call now</a> </button>
+	    </div>
+	  </div>
+	  <div class="item">
+	    <img src="/static/img/slider_img4.jpg" alt="" />
+	    <div class="carousel-caption dark">
+	       <p>Get your commercial reporting and planning to be more than just year-to-date-financial reviews - Build market insights into your executive team by aligning performance management, budgeting and five year strategic planning with real-time market and business insight. Do you need to a more meaningful dialogue with product, geography and head quarter teams and improved commercial performance? <a href="mailto:felg@pracipio.com">Contact us now.</a></p>
+	      <button class="btn btn-info pull-right contact"><a href="contact">Call now</a> </button>
+	    </div>
+	  </div>
+	</div>
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev"><</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">></a>
+      </div> <!-- /#myCarousel -->
+    </div><!-- /container  -->
+  </section><!-- /section.slider  -->
+  
+  <section class="main-page">
+    <div class="container">
+      <div class="row">
+	<div class="span6">
+	  <section>
+	    <!-- delete the class 'header-bg-green' and the <span> if you want to delete the green lines in header backround -->
+	    <header class="main-header header-bg-green">
+	      <span></span>
+	      <h2>Recent Tweets </h2>
+	         
+	
+	    </header><!-- main header -->
+	    
+	    <div class="tweet span6"></div>
+
+	    <ul class="social-icons">
+	      <li>
+		<a href="https://twitter.com/pracipio">View tweets from Pracipio</a> <a rel="tooltip" data-original-title="Follow us @pracipio" href="https://twitter.com/pracipio" class="websymbols twitter" >t</a>
+		
+	      </li>
+	    </ul>
+	  </section>
+	</div>
+
+
+
+	<div class="span6">
+	  <section>
+	    <header class="main-header header-bg-green">
+	      <span></span>
+	      <h2>Latest News</h2>
+	    </header><!-- main header -->
+
+	    <div id="newsCarousel" class="carousel slide">
+	      <!-- Carousel items -->
+	      <div  id="newsCarousel-inner" class="carousel-inner">
+		<div id='newsfeed1' class="active item"></div>
+		<div id='newsfeed2' class="item"></div>
+		<div id='newsfeed3' class="item"></div>
+		<div id='newsfeed4' class="item"></div>
+	      </div>
+	      <!-- Carousel nav -->
+	      <a class="carousel-control left" href="#newsCarousel" data-slide="prev">&lsaquo;</a>
+	      <a class="carousel-control right" href="#newsCarousel" data-slide="next">&rsaquo;</a>
+	    </div>
+
+
+	    
+	  </section>
+
+	  
+	</div> <!-- /span4 -->
+      </div> <!-- /row -->
+     
+ 
+    </div> <!-- /container -->
+  </section> <!-- /section.main-page -->
+
+
+<script>
+
+$(function(){
+    $('#welcome_nav').addClass('active');  
+
+    $('#newsfeed1').rssfeed('http://www.pharmatimes.com/worldnews.rss.ashx',
+			    {limit: 4,linkcontent: false})
+
+    $('#newsfeed2').rssfeed('http://www.medicalnewstoday.com/rss/pharma_industry.xml',
+			    {limit: 4,linkcontent: false})
+
+    $('#newsfeed3').rssfeed( 'http://feeds.feedburner.com/Pharmaceutical-News',
+			    {limit: 4,linkcontent: false})
+
+    $('#newsfeed4').rssfeed('http://feeds.drugs.com/Drugscom-HeadlineNews',
+			    {limit: 4,linkcontent: false})
+
+});
+
+</script>		
+
+
+{% endblock %}

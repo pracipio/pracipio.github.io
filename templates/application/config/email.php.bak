@@ -1,0 +1,7 @@
+$config['useragent']           = "CodeIgniter";
+$config['mailpath']            = "/usr/sbin/sendmail"; // or "/usr/sbin/sendmail"
+$config['protocol']            = "sendmail";
+$config['smtp_host']           = "localhost";
+$config['smtp_user']           = "";
+$config['smtp_pass']           = "";
+$config['smtp_port']           = "25";
